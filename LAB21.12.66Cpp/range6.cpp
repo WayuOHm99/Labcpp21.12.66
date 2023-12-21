@@ -12,7 +12,7 @@ int main() {
             cin >> n;
             if (n==0)
             {
-            count << max - min;
+            cout << max - min;
             exit(0);
             }
 
@@ -26,7 +26,7 @@ int main() {
         min=n;
         }
     }
-    count << max - min;
+    cout << max - min;
     
     return 0;
 }
