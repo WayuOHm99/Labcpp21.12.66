@@ -18,6 +18,6 @@ int main() {
         x=x*i;
         i++;
     }
-    count << x;
+    cout << x;
     return 0;
 }
