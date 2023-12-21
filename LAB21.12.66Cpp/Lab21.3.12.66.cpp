@@ -5,12 +5,11 @@
 using namespace std;
 
 int main() {
-
     int n,i, max, min;
 
     for (int i = 0; i < 10; ++i) {
         do {
-            cout << "Plz enter number (10 - 20), Or 0 Stop: ";
+            cout << "Please enter a number (10 - 20), or 0 to stop: ";
             cin >> n;
 
             if (n == 0) {
@@ -18,8 +17,7 @@ int main() {
             }
 
             if (n < 10 || n > 20) {
-            cout << "again\n";
-                
+                cout << "Invalid input. Please try again.\n";
             }
         } while (n < 10 || n > 20);
 
@@ -32,9 +30,12 @@ int main() {
                 min = n;
             }
         }
+
+        // Clear remaining input buffer
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
-    cout << "range: " << max - min << endl;
+    cout << "Range: " << max - min << endl;
 
     return 0;
 }
