@@ -5,18 +5,19 @@
 
 using namespace std;
 int main() {
-    int n, i, x = 1;
+    int n, i, x;
 
     do {
-    cout << "Enter number(0-10): ";
-    cin >> n;
-    } while (n < 0 || n > 10);
+        cin >> n;
+    }while (n<0 || n>10);
 
-    for (i = 1; i <= n; ++i) {
-        x *= i;
+    i=1;
+    x=1;
+
+    while(i<=n){
+        x=x*i;
+        i++;
     }
-
-    cout << "! = " << x << endl;
-
+    count << x;
     return 0;
 }
