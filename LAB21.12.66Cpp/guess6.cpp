@@ -7,22 +7,14 @@ using namespace std;
 
 int main() {
     char ch, mychar;
-    int count = 0;
-
-    cout << "Please enter word mychar: ";
+    int count ;
+    
+    count = 0;
     cin >> mychar;
-
-    do {
-        cout << "Please enter word ch: ";
+    while (ch != mychar){
         cin >> ch;
-        count++;
-
-        if (ch != mychar) {
-            cout << "\n";
-        }
-    } while (ch != mychar);
-
-    cout << "Nice Number of times: " << count << endl;
-
+        count = count + 1;
+    }
+    count << count << endl;
     return 0;
 }
