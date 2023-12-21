@@ -15,6 +15,6 @@ int main() {
         cin >> ch;
         count = count + 1;
     }
-    count << count << endl;
+    cout << count << endl;
     return 0;
 }
